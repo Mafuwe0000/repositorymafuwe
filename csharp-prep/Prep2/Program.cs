@@ -8,25 +8,35 @@ class Program
         Console.WriteLine("What is your grade percentage, from 0 to 100? ");
         int gradePercent = Console.ReadLine();
         
+        string letter ="";
+
         if (gradePercent>=90)
         {
-         Console.WriteLine(" A");
+         letter="A";
         }
         else if (gradePercent<90 && gradePercent>=80 )
         {
-         Console.WriteLine(" B");   
+         letter=" B";   
         }
         else if (gradePercent<80 && gradePercent>=70 )
         {
-         Console.WriteLine(" C");   
+         letter="C";   
         }
         else if (gradePercent<70 && gradePercent>=60 )
         {
-         Console.WriteLine(" D");   
+         letter =" D";   
         }
         else  (gradePercent<60)
         {
-         Console.WriteLine(" F");   
+         letter="F";   
+        }
+        if gradePercent (>=70)
+        {
+            Console.WriteLine("You passed");
+        }
+        else
+        {
+            Console.WriteLine("Better luck next time!")
         }
 
     }

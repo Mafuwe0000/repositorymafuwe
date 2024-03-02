@@ -7,13 +7,15 @@ class Program
         Console.WriteLine("Hello Prep5 World!");
     }
    
-    Console.WriteLine($"Please enter your name : {PromptUserName}");
-    Console.WriteLine($"Please enter your favorite Number : {userFavoriteNumber}");
-    Console.WriteLine($"Brother {PromptUserName}, the square of your number is : {userFavoriteNumber}");
-        
+      
     static void DisplayWelcome ( )
     {
         Console.WriteLine("welcome to the Program!");
+        string userName = PromptUserName();
+        int userFavoriteNumber = PromptUserNumber();
+        int squaredNumber = squaredNumber(PromptUserNumber)
+
+        DisplayResult(userName, squaredNumber)
     }
     static string PromptUserName (string userName)
     {
@@ -25,21 +27,20 @@ class Program
     static int PromptUserNumber (int userFavoriteNumber)
     {
         Console.WriteLine("Please enter your favorite number :");
-        int userFavoriteNumber=Console.Readline();
+        int userFavoriteNumber=int.Parse(Console.Readline());
         
         return userFavoriteNumber
     }
-    static int PromptUserNumber (int userNumber)
+    static int SquareNumber (int number)
     {
         Console.WriteLine("Please enter any number :");
-        int userNumber=Console.Readline();
+        int square=number * number;
         
-        return userNumber
+        return square
     }
 
-    static void DisplayResult (strint userName, int squaredNumber)
+    static void DisplayResult (string userName, int squaredNumber)
     {
-        int squared= squaredNumber ^1/2
-        Console.WriteLine($"Hello Brother (Sister ) {promptUserName}, the square root of your number is {squared}")
+        Console.WriteLine($"Hello Brother (Sister ) {userName}, the square root of your number is {square}");
     }
 }
